@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
-import { Container, Card, Row, Col} from 'react-bootstrap';
+import { Container, Card, Row, Col } from 'react-bootstrap';
 import TastyBur from '../Image/tasty burgar1.png'
 import Tasty_bur from '../Image/tasty burgar2.png'
 import TastyPas from '../Image/tasty pasta.png'
 
+import CartEvent from './CartEvent';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
@@ -18,7 +19,7 @@ export class ProductMarketThir extends Component {
                     <Col sm={6} lg={4}>
                         <Card className='cardmarket'>
                             <div className='img-fluid inner-Photo'>
-                                <Card.Img variant="top" className='center-block d-block mx-auto imageBur' src={TastyBur } alt='burgar1' />
+                                <Card.Img variant="top" className='center-block d-block mx-auto imageBur' src={TastyBur} alt='burgar1' />
                             </div>
                             <Card.Body>
                                 <Card.Title>
@@ -30,8 +31,8 @@ export class ProductMarketThir extends Component {
                                     </p>
                                 </Card.Text>
                                 <div className=' d-flex justify-content-between'>
-                                    <p style={{ fontSize: '21px', color: 'white' }}>$20</p>
-                                    <FontAwesomeIcon icon={faShoppingCart} className='awesome' />
+                                    <p style={{ fontSize: '21px', color: 'white' }}>$20 {this.props.count}</p>
+                                    <CartEvent />
                                 </div>
                             </Card.Body>
                         </Card>
@@ -51,8 +52,8 @@ export class ProductMarketThir extends Component {
                                         quisquam velit, magnam voluptatem repellendus sed eaque</p>
                                 </Card.Text>
                                 <div className=' d-flex justify-content-between'>
-                                    <p style={{ fontSize: '21px', color: 'white' }}>$20</p>
-                                    <FontAwesomeIcon icon={faShoppingCart} className='awesome' />
+                                    <p style={{ fontSize: '21px', color: 'white' }}>$20 {this.props.count}</p>
+                                    <CartEvent />
                                 </div>
                             </Card.Body>
                         </Card>
@@ -71,8 +72,8 @@ export class ProductMarketThir extends Component {
                                         quisquam velit, magnam voluptatem repellendus sed eaque</p>
                                 </Card.Text>
                                 <div className=' d-flex justify-content-between'>
-                                    <p style={{ fontSize: '21px', color: 'white' }}>$20</p>
-                                    <FontAwesomeIcon icon={faShoppingCart} className='awesome' />
+                                    <p style={{ fontSize: '21px', color: 'white' }}>$20 {this.props.count}</p>
+                                    <CartEvent />
                                 </div>
                             </Card.Body>
                         </Card>

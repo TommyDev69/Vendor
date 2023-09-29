@@ -9,7 +9,7 @@ function CauDisplay() {
 
         <div className='container'>
 
-            <Carousel className='d' controls={false} indicators={true} >
+            <Carousel className='d' controls={false} indicators={false} >
 
                 <Carousel.Item interval={1000} active>
                     <div className='row indicator'>

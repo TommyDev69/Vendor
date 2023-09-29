@@ -6,17 +6,13 @@ import Deli1 from '../Image/deli pizza.png'
 import ProductMarketSec from './ProductMarketSec';
 import ProductMarketThir from './ProductMarketThir';
 
+import CartEvent from './CartEvent';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import '../StylePage/NavbarStyling.css';
-class ProductMarket extends Component {
-    constructor(props) {
-        super(props)
 
-        this.state = {
-            burgar: true,
-        }
-    }
+class ProductMarket extends Component {
     render() {
         return (
             <div>
@@ -38,8 +34,8 @@ class ProductMarket extends Component {
                                         </p>
                                     </Card.Text>
                                     <div className=' d-flex justify-content-between'>
-                                        <p style={{ fontSize: '21px', color: 'white' }}>$20</p>
-                                        <FontAwesomeIcon icon={faShoppingCart} className='awesome' />
+                                        <p style={{ fontSize: '21px', color: 'white' }}>$20 {this.props.count}</p>
+                                        <CartEvent />
                                     </div>
                                 </Card.Body>
                             </Card>
@@ -60,8 +56,8 @@ class ProductMarket extends Component {
                                             quisquam velit, magnam voluptatem repellendus sed eaque</p>
                                     </Card.Text>
                                     <div className=' d-flex justify-content-between'>
-                                        <p style={{ fontSize: '21px', color: 'white' }}>$20</p>
-                                        <FontAwesomeIcon icon={faShoppingCart} className='awesome' />
+                                        <p style={{ fontSize: '21px', color: 'white' }}>$20 {this.props.count}</p>
+                                        <CartEvent />
                                     </div>
                                 </Card.Body>
                             </Card>
@@ -81,8 +77,8 @@ class ProductMarket extends Component {
                                             quisquam velit, magnam voluptatem repellendus sed eaque</p>
                                     </Card.Text>
                                     <div className=' d-flex justify-content-between'>
-                                        <p style={{ fontSize: '21px', color: 'white' }}>$20</p>
-                                        <FontAwesomeIcon icon={faShoppingCart} className='awesome' />
+                                        <p style={{ fontSize: '21px', color: 'white' }}>$20 {this.props.count}</p>
+                                        <CartEvent />
                                     </div>
                                 </Card.Body>
                             </Card>
@@ -96,7 +92,7 @@ class ProductMarket extends Component {
 
                 <ProductMarketThir />
                 <div className='justify-content-center m-auto d-flex text-center'>
-                    <Button className='text-light  rounded-pill ' style={{ width: '200px', backgroundColor: '#ffbe33', marginTop: '7%', border:'none' }}>Search</Button>
+                    <Button className='text-light  rounded-pill ' style={{ width: '200px', backgroundColor: '#ffbe33', marginTop: '7%', border: 'none' }}>Search</Button>
                 </div>
 
             </div>

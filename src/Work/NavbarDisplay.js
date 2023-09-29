@@ -12,6 +12,9 @@ import CauDisplay from './CauDisplay';
 
 import { Link } from 'react-router-dom';
 
+// import CartEvent from './CartEvent';
+
+import ProductMarket from './ProductMarket';
 // import {Link} from "react-router-dom";
 // import NavbarDisplay from './CauDisplay';
 import '../StylePage/NavbarStyling.css';
@@ -50,9 +53,9 @@ class NavbarDisplay extends Component {
 										<Col className=" yy"  >
 								<div className='justify-content-end' style={{ fontSize: '16px', padding: '12px 0px 12px 10px' }}>
 
-											<FontAwesomeIcon icon={faUser} className=" text-white" />&nbsp;&nbsp;&nbsp;
-											<FontAwesomeIcon icon={faShoppingCart} className=" text-white" /> &nbsp;&nbsp;&nbsp;
-											<FontAwesomeIcon icon={faSearch} className=" text-white" />
+									<FontAwesomeIcon icon={faUser} className=" text-white" />&nbsp;&nbsp;&nbsp;
+									<FontAwesomeIcon icon={faShoppingCart} className=" text-white" /> &nbsp;&nbsp;&nbsp;
+									<FontAwesomeIcon icon={faSearch} className=" text-white" />
 								</div>
 
 										</Col>

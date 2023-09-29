@@ -4,6 +4,8 @@ import Pasta from '../Image/delicious pasta.png'
 import French_Fries from '../Image/french fries.png'
 import Del_Piz from '../Image/rounded pizza.png'
 
+import CartEvent from './CartEvent';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import '../StylePage/NavbarStyling.css';
@@ -28,8 +30,8 @@ class ProductMarketSec extends Component {
                                     </p>
                                 </Card.Text>
                                 <div className=' d-flex justify-content-between'>
-                                    <p style={{ fontSize: '21px', color: 'white' }}>$20</p>
-                                    <FontAwesomeIcon icon={faShoppingCart} className='awesome' />
+                                    <p style={{ fontSize: '21px', color: 'white' }}>$20 {this.props.count}</p>
+                                    <CartEvent />
                                 </div>
                             </Card.Body>
                         </Card>
@@ -49,8 +51,8 @@ class ProductMarketSec extends Component {
                                         quisquam velit, magnam voluptatem repellendus sed eaque</p>
                                 </Card.Text>
                                 <div className=' d-flex justify-content-between'>
-                                    <p style={{ fontSize: '21px', color: 'white' }}>$20</p>
-                                    <FontAwesomeIcon icon={faShoppingCart} className='awesome' />
+                                    <p style={{ fontSize: '21px', color: 'white' }}>$20 {this.props.count}</p>
+                                    <CartEvent />
                                 </div>
                             </Card.Body>
                         </Card>
@@ -69,8 +71,8 @@ class ProductMarketSec extends Component {
                                         quisquam velit, magnam voluptatem repellendus sed eaque</p>
                                 </Card.Text>
                                 <div className=' d-flex justify-content-between'>
-                                    <p style={{ fontSize: '21px', color: 'white' }}>$20</p>
-                                    <FontAwesomeIcon icon={faShoppingCart} className='awesome' />
+                                    <p style={{ fontSize: '21px', color: 'white' }}>$20 {this.props.count}</p>
+                                    <CartEvent />
                                 </div>
                             </Card.Body>
                         </Card>
